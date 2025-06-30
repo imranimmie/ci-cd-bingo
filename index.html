@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Number Guessing Game</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Immie Wordle</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="game-container">
-    <h1>Guess the Number (1-100)</h1>
-    <input type="number" id="guessInput" placeholder="Enter your guess..." min="1" max="100">
-    <button onclick="checkGuess()">Submit</button>
-    <p id="message"></p>
-  </div>
-  <script src="guess.js"></script>
+  <h1>Immie Wordle</h1>
+  <div id="game-board"></div>
+  <div id="keyboard"></div>
+  <p id="message"></p>
+  <button onclick="restartGame()">🔄 Restart</button>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
