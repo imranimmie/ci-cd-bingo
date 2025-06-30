@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Bingo Game</title>
+  <meta charset="UTF-8">
+  <title>Number Guessing Game</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Bingo Game</h1>
-  <button onclick="generateBingo()">Generate Bingo Card</button>
-  <div id="bingoCard"></div>
-  <script src="bingo.js"></script>
+  <div class="game-container">
+    <h1>Guess the Number (1-100)</h1>
+    <input type="number" id="guessInput" placeholder="Enter your guess..." min="1" max="100">
+    <button onclick="checkGuess()">Submit</button>
+    <p id="message"></p>
+  </div>
+  <script src="guess.js"></script>
 </body>
 </html>
-
